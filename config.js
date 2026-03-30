@@ -1,22 +1,23 @@
-// Configuration File for Jumia Clone
 
-const CONFIG = {
+// This file MUST be loaded before api.js and script.js
+
+window.CONFIG = {
     // Site Information
     site: {
         name: "FlashCart-KE",
         currency: "KSh",
         currencySymbol: "KSh",
-        exchangeRate: 120, // USD to KSh conversion
-        taxRate: 0.16, // 16% VAT
+        exchangeRate: 120,
+        taxRate: 0.16,
         shippingCost: 200
     },
 
     // API Configuration
     api: {
         baseUrl: "https://fakestoreapi.com",
-        timeout: 10000, // 10 seconds timeout
+        timeout: 10000,
         retryAttempts: 3,
-        cacheDuration: 300000 // 5 minutes cache
+        cacheDuration: 300000
     },
 
     // Feature Flags
@@ -30,13 +31,13 @@ const CONFIG = {
 
     // UI Settings
     ui: {
-        productsPerPage: 10,
-        slidesInterval: 5000, // 5 seconds
+        productsPerPage: 6,
+        slidesInterval: 5000,
         toastDuration: 3000,
         cartSidebarWidth: 400
     },
 
-    // Categories Mapping
+    // Categories
     categories: {
         "electronics": {
             name: "Electronics",
@@ -56,7 +57,7 @@ const CONFIG = {
         }
     },
 
-    // Color Scheme
+    // Colors
     colors: {
         primary: "#f68b1e",
         secondary: "#282c3f",
@@ -67,7 +68,5 @@ const CONFIG = {
     }
 };
 
-// Export for module systems (optional)
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = CONFIG;
-}
+// Log to confirm config loaded
+console.log('✅ CONFIG loaded successfully:', window.CONFIG.site.name);
