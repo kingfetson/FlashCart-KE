@@ -237,7 +237,7 @@ function processOrder(event) {
     showToast('Processing your order...');
     
     setTimeout(() => {
-        alert(`Order Placed Successfully!\n\nTotal: ${total}\n\nThank you for shopping with Jumia!\n\nOrder ID: #JUM${Date.now()}`);
+        alert(`Order Placed Successfully!\n\nTotal: ${total}\n\nThank you for shopping with FlashCart Kenya!\n\nOrder ID: #JUM${Date.now()}`);
         cart = [];
         saveCart();
         updateCartUI();
