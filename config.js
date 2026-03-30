@@ -1,5 +1,5 @@
 const CONFIG = {
-    siteName: "JUMIA",
+    siteName: "FlashCart",
     currency: "KSh",
     colors: {
         primary: "#f68b1e", // Jumia Orange
