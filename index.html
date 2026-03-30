@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumia Online Shopping | Love, Family, Community</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <span><i class="fa-solid fa-gift"></i> Sell on Jumia</span>
+            <div class="top-links">
+                <a href="#">Help Center</a>
+                <a href="#">Order Tracker</a>
+                <a href="#">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <h1>JUMIA</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search products, brands and categories">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="header-icons">
+                <div class="icon-item"><i class="fa-regular fa-user"></i> Account</div>
+                <div class="icon-item"><i class="fa-regular fa-circle-question"></i> Help</div>
+                <div class="icon-item cart"><i class="fa-solid fa-cart-shopping"></i> Cart</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation & Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <aside class="categories-sidebar">
+                <ul>
+                    <li><i class="fa-solid fa-mobile-screen"></i> Phones & Tablets</li>
+                    <li><i class="fa-solid fa-tv"></i> TV & Audio</li>
+                    <li><i class="fa-solid fa-blender"></i> Appliances</li>
+                    <li><i class="fa-solid fa-heart-pulse"></i> Health & Beauty</li>
+                    <li><i class="fa-solid fa-couch"></i> Home & Office</li>
+                    <li><i class="fa-solid fa-laptop"></i> Computing</li>
+                    <li><i class="fa-solid fa-gamepad"></i> Gaming</li>
+                    <li><i class="fa-solid fa-basket-shopping"></i> Supermarket</li>
+                </ul>
+            </aside>
+
+            <div class="hero-banner">
+                <div class="banner-main">
+                    <div class="banner-text">
+                        <h2>JUMIA EASTER SALE</h2>
+                        <h3>AILYONS 2.1CH Sound Bar SubWoofer</h3>
+                        <p class="price">KSh 3,099</p>
+                        <button class="btn-shop">SHOP NOW</button>
+                    </div>
+                    <div class="banner-img">
+                        <img src="https://placehold.co/400x250/333/fff?text=Soundbar+Image" alt="Soundbar">
+                    </div>
+                </div>
+                <div class="banner-promo">
+                    <div class="promo-item"><strong>BUY 2 PAY FOR 1</strong><br>Buy 2 Get Extra 2 Off</div>
+                    <div class="promo-item"><strong>XTRA 10% OFF</strong><br>Cleaners Sale</div>
+                    <div class="promo-item"><strong>FASHION</strong><br>Mens Fashion</div>
+                    <div class="promo-item"><strong>Kids&Baby</strong></div>
+                    <div class="promo-item"><strong>Call To Order</strong></div>
+                    <div class="promo-item"><strong>Video Games</strong></div>
+                    <div class="promo-item"><strong>JDelivery</strong></div>
+                </div>
+            </div>
+
+            <div class="whatsapp-sidebar">
+                <div class="wa-box">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp<br>Call To Order
+                </div>
+                <div class="wa-box">
+                    CHINA TOWN<br>NOW ON JUMIA
+                </div>
+                <div class="wa-box">
+                    SELL ON JUMIA<br>Millions Of Visitors
+                </div>
+                <div class="wa-btn">
+                    Call or WhatsApp<br>0711 011 011<br>to order<br><strong>SHOP NOW ></strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flash Sales -->
+    <section class="flash-sales container">
+        <div class="section-header">
+            <h2><i class="fa-solid fa-bolt"></i> Flash Sales | Live Now</h2>
+            <div class="timer">Time Left: <span id="countdown">00h : 02m : 30s</span></div>
+            <a href="#" class="see-all">See All ></a>
+        </div>
+        <div class="product-grid" id="flash-sales-grid">
+            <!-- Products injected via JS -->
+        </div>
+    </section>
+
+    <!-- Category Circles -->
+    <section class="category-circles container">
+        <div class="circle-item"><div class="circle-icon"><i class="fa-solid fa-bolt"></i></div><p>Flash Sales</p></div>
+        <div class="circle-item"><div class="circle-icon"><i class="fa-solid fa-couch"></i></div><p>Home Deals</p></div>
+        <div class="circle-item"><div class="circle-icon"><i class="fa-solid fa-mobile-screen"></i></div><p>Phone Deals</p></div>
+        <div class="circle-item"><div class="circle-icon"><i class="fa-solid fa-tv"></i></div><p>Electronics</p></div>
+        <div class="circle-item"><div class="circle-icon"><i class="fa-solid fa-blender"></i></div><p>Large Appliances</p></div>
+        <div class="circle-item"><div class="circle-icon"><i class="fa-brands fa-xiaomi"></i></div><p>Official Stores</p></div>
+        <div class="circle-item"><div class="circle-icon"><i class="fa-solid fa-laptop"></i></div><p>Computing</p></div>
+        <div class="circle-item"><div class="circle-icon"><i class="fa-solid fa-pump-soap"></i></div><p>Beauty Deals</p></div>
+        <div class="circle-item express"><div class="circle-icon"><i class="fa-solid fa-truck-fast"></i></div><p>EXPRESS DEALS</p></div>
+        <div class="circle-item"><div class="circle-icon"><i class="fa-solid fa-shirt"></i></div><p>Fashion Deals</p></div>
+        <div class="circle-item"><div class="circle-icon"><i class="fa-solid fa-basket-shopping"></i></div><p>Supermarket</p></div>
+        <div class="circle-item"><div class="circle-icon"><i class="fa-solid fa-money-bill-wave"></i></div><p>Make Money</p></div>
+    </section>
+
+    <!-- Top Selling Items -->
+    <section class="product-section container">
+        <div class="section-header">
+            <h2>Top selling items</h2>
+            <a href="#" class="see-all">See All ></a>
+        </div>
+        <div class="product-grid" id="top-selling-grid">
+            <!-- Injected via JS -->
+        </div>
+    </section>
+
+    <!-- Sponsored Products -->
+    <section class="product-section container">
+        <div class="section-header">
+            <h2>Sponsored products</h2>
+            <a href="#" class="see-all">See All ></a>
+        </div>
+        <div class="product-grid">
+            <!-- Static Mockup for variety -->
+            <div class="product-card">
+                <span class="discount">-50%</span>
+                <img src="https://placehold.co/150x150?text=Hair+Dryer" alt="Product">
+                <h3>Most Sturdy And D...</h3>
+                <div class="price-box">KSh 998 <span class="old-price">KSh 2,000</span></div>
+            </div>
+            <div class="product-card">
+                <span class="discount">-33%</span>
+                <img src="https://placehold.co/150x150?text=Toothbrush" alt="Product">
+                <h3>Electric Toothbrush...</h3>
+                <div class="price-box">KSh 580 <span class="old-price">KSh 870</span></div>
+            </div>
+             <div class="product-card">
+                <span class="discount">-54%</span>
+                <img src="https://placehold.co/150x150?text=Skin+Care" alt="Product">
+                <h3>5-in-1 Facial Skin C...</h3>
+                <div class="price-box">KSh 440 <span class="old-price">KSh 950</span></div>
+            </div>
+             <div class="product-card">
+                <span class="discount">-50%</span>
+                <img src="https://placehold.co/150x150?text=Fairy+Lights" alt="Product">
+                <h3>Christmas Fairy Str...</h3>
+                <div class="price-box">KSh 935 <span class="old-price">KSh 1,870</span></div>
+            </div>
+             <div class="product-card">
+                <span class="discount">-50%</span>
+                <img src="https://placehold.co/150x150?text=Toothbrush" alt="Product">
+                <h3>Electric Toothbrush...</h3>
+                <div class="price-box">KSh 653 <span class="old-price">KSh 1,300</span></div>
+            </div>
+             <div class="product-card">
+                <span class="discount">-34%</span>
+                <img src="https://placehold.co/150x150?text=Skincare+Set" alt="Product">
+                <h3>Biore UV Aqua Rich...</h3>
+                <div class="price-box">KSh 468 <span class="old-price">KSh 710</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Easter Sale Deals -->
+    <section class="product-section container">
+        <div class="section-header orange-bg">
+            <h2>Easter Sale Deals</h2>
+            <a href="#" class="see-all">See All ></a>
+        </div>
+        <div class="product-grid">
+             <div class="product-card">
+                <span class="discount">-19%</span>
+                <img src="https://placehold.co/150x150?text=Tablet" alt="Product">
+                <h3>QUBI CBT45 43 In...</h3>
+                <div class="price-box">KSh 17,810 <span class="old-price">KSh 21,999</span></div>
+            </div>
+             <div class="product-card">
+                <span class="discount">-16%</span>
+                <img src="https://placehold.co/150x150?text=Phone" alt="Product">
+                <h3>LESAI Dual SIM Fea...</h3>
+                <div class="price-box">KSh 740 <span class="old-price">KSh 876</span></div>
+            </div>
+             <div class="product-card">
+                <span class="discount">-37%</span>
+                <img src="https://placehold.co/150x150?text=Phone" alt="Product">
+                <h3>Vision VTE4002...</h3>
+                <div class="price-box">KSh 17,099 <span class="old-price">KSh 26,999</span></div>
+            </div>
+             <div class="product-card">
+                <span class="discount">-12%</span>
+                <img src="https://placehold.co/150x150?text=Phone" alt="Product">
+                <h3>Redmi 15C by Xiao...</h3>
+                <div class="price-box">KSh 13,180 <span class="old-price">KSh 15,000</span></div>
+            </div>
+             <div class="product-card">
+                <span class="discount">-42%</span>
+                <img src="https://placehold.co/150x150?text=Earbuds" alt="Product">
+                <h3>Oraimo SpaceBuds ...</h3>
+                <div class="price-box">KSh 1,398 <span class="old-price">KSh 2,394</span></div>
+            </div>
+             <div class="product-card">
+                <span class="discount">-47%</span>
+                <img src="https://placehold.co/150x150?text=TV" alt="Product">
+                <h3>Hisense 32 inch A4 ...</h3>
+                <div class="price-box">KSh 13,187 <span class="old-price">KSh 24,999</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buy Two Get 10% Off -->
+    <section class="product-section container">
+        <div class="section-header yellow-bg">
+            <h2>Buy Two | Get 10% Off</h2>
+            <a href="#" class="see-all">See All ></a>
+        </div>
+        <div class="product-grid">
+             <div class="product-card">
+                <span class="discount">-12%</span>
+                <img src="https://placehold.co/150x150?text=Kettle" alt="Product">
+                <h3>AILYONS Electric Ke...</h3>
+                <div class="price-box">KSh 750 <span class="old-price">KSh 840</span></div>
+            </div>
+             <div class="product-card">
+                <span class="discount">-25%</span>
+                <img src="https://placehold.co/150x150?text=Speaker" alt="Product">
+                <h3>AILIPU SPEAKER KL...</h3>
+                <div class="price-box">KSh 3,589 <span class="old-price">KSh 4,759</span></div>
+            </div>
+             <div class="product-card">
+                <span class="discount">-29%</span>
+                <img src="https://placehold.co/150x150?text=SSD" alt="Product">
+                <h3>GUDEON 128GB M...</h3>
+                <div class="price-box">KSh 592 <span class="old-price">KSh 792</span></div>
+            </div>
+             <div class="product-card">
+                <span class="discount">-51%</span>
+                <img src="https://placehold.co/150x150?text=Jacket" alt="Product">
+                <h3>Bumbkey Men's Cott...</h3>
+                <div class="price-box">KSh 1,119 <span class="old-price">KSh 2,265</span></div>
+            </div>
+             <div class="product-card">
+                <span class="discount">-40%</span>
+                <img src="https://placehold.co/150x150?text=Tripod" alt="Product">
+                <h3>Mythico USB Power...</h3>
+                <div class="price-box">KSh 610 <span class="old-price">KSh 1,020</span></div>
+            </div>
+             <div class="product-card">
+                <span class="discount new">NEW -59%</span>
+                <img src="https://placehold.co/150x150?text=Headphones" alt="Product">
+                <h3>Wireless Bluetooth...</h3>
+                <div class="price-box">KSh 1,608 <span class="old-price">KSh 3,826</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Easter Sale | Top Deals on Phones -->
+    <section class="product-section container">
+        <div class="section-header orange-bg">
+            <h2>Easter Sale | Top Deals on Phones</h2>
+            <a href="#" class="see-all">See All ></a>
+        </div>
+        <div class="product-grid" id="phones-grid">
+            <!-- Injected via JS -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <h3>Jumia Kenya - Unveiling Our Leading E-Commerce Website</h3>
+                    <p>Welcome to the ultimate online shopping destination! Our e-commerce platform is here to revolutionize your shopping journey...</p>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="col">
+                    <h4>ABOUT JUMIA</h4>
+                    <ul>
+                        <li>About us</li>
+                        <li>Terms and Conditions</li>
+                        <li>Jumia Careers</li>
+                        <li>Jumia Express</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>MAKE MONEY WITH JUMIA</h4>
+                    <ul>
+                        <li>Sell on Jumia</li>
+                        <li>Vendor Hub</li>
+                        <li>Become a Sales Consultant</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>JUMIA INTERNATIONAL</h4>
+                    <ul>
+                        <li>Ivory Coast</li>
+                        <li>Egypt</li>
+                        <li>Ghana</li>
+                        <li>Kenya</li>
+                        <li>Nigeria</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="socials">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+                <div class="payment-methods">
+                    <span>VISA</span>
+                    <span>MasterCard</span>
+                    <span>M-PESA</span>
+                </div>
+                <p>&copy; 2026 Jumia. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
