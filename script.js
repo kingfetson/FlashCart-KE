@@ -49,13 +49,13 @@ function renderProducts() {
     }
 
     // Flash Sales (first 6 products)
-    renderGrid('flash-sales-grid', allProducts.slice(0, 6));
+    renderGrid('flash-sales-grid', allProducts.slice(0, 10));
     
     // Top Selling (next 6 products)
-    renderGrid('top-selling-grid', allProducts.slice(6, 12));
+    renderGrid('top-selling-grid', allProducts.slice(10, 20));
     
     // Easter Sale (next 6 products)
-    renderGrid('easter-sale-grid', allProducts.slice(12, 18));
+    renderGrid('easter-sale-grid', allProducts.slice(20, 30));
 }
 
 // Render Grid Function
