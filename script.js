@@ -1,5 +1,17 @@
 // Main Application Script
 
+
+// Test if CONFIG is loaded
+console.log('🔍 Checking CONFIG...');
+console.log('CONFIG exists:', typeof CONFIG !== 'undefined');
+console.log('CONFIG.site:', CONFIG?.site);
+console.log('CONFIG.api:', CONFIG?.api);
+
+if (!CONFIG) {
+    alert('ERROR: config.js not loaded! Check script order in HTML.');
+}
+
+
 // Global State
 let allProducts = [];
 let cart = [];
