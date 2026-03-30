@@ -49,44 +49,74 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <div class="hero-section">
-        <div class="container">
-            <aside class="categories-sidebar">
-                <ul>
-                    <li onclick="filterCategory('phones')"><i class="fa-solid fa-mobile-screen"></i> Phones & Tablets</li>
-                    <li onclick="filterCategory('tv')"><i class="fa-solid fa-tv"></i> TV & Audio</li>
-                    <li onclick="filterCategory('appliances')"><i class="fa-solid fa-blender"></i> Appliances</li>
-                    <li onclick="filterCategory('beauty')"><i class="fa-solid fa-heart-pulse"></i> Health & Beauty</li>
-                    <li onclick="filterCategory('home')"><i class="fa-solid fa-couch"></i> Home & Office</li>
-                    <li onclick="filterCategory('computing')"><i class="fa-solid fa-laptop"></i> Computing</li>
-                    <li onclick="filterCategory('gaming')"><i class="fa-solid fa-gamepad"></i> Gaming</li>
-                    <li onclick="filterCategory('supermarket')"><i class="fa-solid fa-basket-shopping"></i> Supermarket</li>
-                </ul>
-            </aside>
-
-            <div class="hero-banner">
-                <div class="banner-main">
-                    <div class="banner-text">
-                        <h2>JUMIA EASTER SALE</h2>
-                        <h3>AILYONS 2.1CH Sound Bar SubWoofer</h3>
-                        <p class="price">KSh 3,099</p>
-                        <button class="btn-shop" onclick="addToCart(1)">SHOP NOW</button>
-                    </div>
-                    <div class="banner-img">
-                        <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=400&h=250&fit=crop" alt="Soundbar">
-                    </div>
-                </div>
-                <div class="banner-promo">
-                    <div class="promo-item" onclick="showToast('Buy 2 Pay for 1 offer!')"><strong>BUY 2 PAY FOR 1</strong><br>Buy 2 Get Extra 2 Off</div>
-                    <div class="promo-item" onclick="showToast('Extra 10% off on cleaners!')"><strong>XTRA 10% OFF</strong><br>Cleaners Sale</div>
-                    <div class="promo-item" onclick="filterCategory('fashion')"><strong>FASHION</strong><br>Mens Fashion</div>
-                    <div class="promo-item" onclick="filterCategory('kids')"><strong>Kids&Baby</strong></div>
-                    <div class="promo-item" onclick="showToast('Call us: 0711 011 011')"><strong>Call To Order</strong></div>
-                    <div class="promo-item" onclick="filterCategory('gaming')"><strong>Video Games</strong></div>
-                    <div class="promo-item" onclick="showToast('Fast delivery available!')"><strong>JDelivery</strong></div>
-                </div>
+    <div class="hero-banner">
+    <div class="banner-slider">
+        <div class="banner-slide active" style="background: linear-gradient(90deg, #282c3f 0%, #4a526e 100%);">
+            <div class="banner-text">
+                <h2>JUMIA EASTER SALE</h2>
+                <h3>AILYONS 2.1CH Sound Bar SubWoofer</h3>
+                <p class="price">KSh 3,099</p>
+                <button class="btn-shop" onclick="addToCart(1)">SHOP NOW</button>
             </div>
+            <div class="banner-img">
+                <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=400&h=250&fit=crop" alt="Soundbar">
+            </div>
+        </div>
+        
+        <div class="banner-slide" style="background: linear-gradient(90deg, #1a1d2e 0%, #3d4558 100%);">
+            <div class="banner-text">
+                <h2>FLASH DEALS</h2>
+                <h3>Samsung Galaxy S26 Ultra</h3>
+                <p class="price">KSh 161,300</p>
+                <button class="btn-shop" onclick="addToCart(406)">SHOP NOW</button>
+            </div>
+            <div class="banner-img">
+                <img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400&h=250&fit=crop" alt="Samsung Phone">
+            </div>
+        </div>
+        
+        <div class="banner-slide" style="background: linear-gradient(90deg, #2d3436 0%, #636e72 100%);">
+            <div class="banner-text">
+                <h2>COMPUTING DEALS</h2>
+                <h3>MacBook Pro 13' Core i5</h3>
+                <p class="price">KSh 22,500</p>
+                <button class="btn-shop" onclick="addToCart(102)">SHOP NOW</button>
+            </div>
+            <div class="banner-img">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=250&fit=crop" alt="MacBook">
+            </div>
+        </div>
+        
+        <div class="banner-slide" style="background: linear-gradient(90deg, #0c2461 0%, #1e3799 100%);">
+            <div class="banner-text">
+                <h2>HOME APPLIANCES</h2>
+                <h3>QUBI CBT45 43 Inch Smart TV</h3>
+                <p class="price">KSh 17,810</p>
+                <button class="btn-shop" onclick="addToCart(201)">SHOP NOW</button>
+            </div>
+            <div class="banner-img">
+                <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=250&fit=crop" alt="Smart TV">
+            </div>
+        </div>
+    </div>
+    
+    <div class="slider-dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    
+    <div class="banner-promo">
+        <div class="promo-item" onclick="showToast('Buy 2 Pay for 1 offer!')"><strong>BUY 2 PAY FOR 1</strong><br>Buy 2 Get Extra 2 Off</div>
+        <div class="promo-item" onclick="showToast('Extra 10% off on cleaners!')"><strong>XTRA 10% OFF</strong><br>Cleaners Sale</div>
+        <div class="promo-item" onclick="filterCategory('fashion')"><strong>FASHION</strong><br>Mens Fashion</div>
+        <div class="promo-item" onclick="filterCategory('kids')"><strong>Kids&Baby</strong></div>
+        <div class="promo-item" onclick="showToast('Call us: 0711 011 011')"><strong>Call To Order</strong></div>
+        <div class="promo-item" onclick="filterCategory('gaming')"><strong>Video Games</strong></div>
+        <div class="promo-item" onclick="showToast('Fast delivery available!')"><strong>JDelivery</strong></div>
+    </div>
+</div>
 
             <div class="whatsapp-sidebar">
                 <div class="wa-box" onclick="showToast('WhatsApp us: +254 711 011 011')">
