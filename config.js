@@ -30,7 +30,7 @@ const CONFIG = {
 
     // UI Settings
     ui: {
-        productsPerPage: 6,
+        productsPerPage: 10,
         slidesInterval: 5000, // 5 seconds
         toastDuration: 3000,
         cartSidebarWidth: 400
