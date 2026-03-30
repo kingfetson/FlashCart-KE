@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jumia Online Shopping | Love, Family, Community</title>
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -49,74 +47,74 @@
         </div>
     </header>
 
-    <div class="hero-banner">
-    <div class="banner-slider">
-        <div class="banner-slide active" style="background: linear-gradient(90deg, #282c3f 0%, #4a526e 100%);">
-            <div class="banner-text">
-                <h2>JUMIA EASTER SALE</h2>
-                <h3>AILYONS 2.1CH Sound Bar SubWoofer</h3>
-                <p class="price">KSh 3,099</p>
-                <button class="btn-shop" onclick="addToCart(1)">SHOP NOW</button>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <aside class="categories-sidebar">
+                <ul>
+                    <li onclick="filterCategory('electronics')"><i class="fa-solid fa-plug"></i> Electronics</li>
+                    <li onclick="filterCategory('jewelery')"><i class="fa-solid fa-gem"></i> Jewelry</li>
+                    <li onclick="filterCategory('men's clothing')"><i class="fa-solid fa-shirt"></i> Men's Fashion</li>
+                    <li onclick="filterCategory('women's clothing')"><i class="fa-solid fa-person-dress"></i> Women's Fashion</li>
+                    <li onclick="showAllProducts()"><i class="fa-solid fa-list"></i> All Products</li>
+                </ul>
+            </aside>
+
+            <div class="hero-banner">
+                <div class="banner-slider">
+                    <div class="banner-slide active" style="background: linear-gradient(90deg, #282c3f 0%, #4a526e 100%);">
+                        <div class="banner-text">
+                            <h2>JUMIA EASTER SALE</h2>
+                            <h3>Up to 50% Off on Electronics</h3>
+                            <p class="price">Starting KSh 3,099</p>
+                            <button class="btn-shop" onclick="filterCategory('electronics')">SHOP NOW</button>
+                        </div>
+                        <div class="banner-img">
+                            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="Product">
+                        </div>
+                    </div>
+                    
+                    <div class="banner-slide" style="background: linear-gradient(90deg, #1a1d2e 0%, #3d4558 100%);">
+                        <div class="banner-text">
+                            <h2>FLASH DEALS</h2>
+                            <h3>Premium Jewelry Collection</h3>
+                            <p class="price">Up to 40% Off</p>
+                            <button class="btn-shop" onclick="filterCategory('jewelery')">SHOP NOW</button>
+                        </div>
+                        <div class="banner-img">
+                            <img src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_FMwebp_QL65_.jpg" alt="Jewelry">
+                        </div>
+                    </div>
+                    
+                    <div class="banner-slide" style="background: linear-gradient(90deg, #2d3436 0%, #636e72 100%);">
+                        <div class="banner-text">
+                            <h2>FASHION WEEK</h2>
+                            <h3>Latest Men's & Women's Clothing</h3>
+                            <p class="price">From KSh 2,500</p>
+                            <button class="btn-shop" onclick="filterCategory('men's clothing')">SHOP NOW</button>
+                        </div>
+                        <div class="banner-img">
+                            <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" alt="Fashion">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+                
+                <div class="banner-promo">
+                    <div class="promo-item" onclick="showToast('Buy 2 Pay for 1 offer!')"><strong>BUY 2 PAY FOR 1</strong><br>Special Offer</div>
+                    <div class="promo-item" onclick="showToast('Extra 10% off!')"><strong>XTRA 10% OFF</strong><br>Cleaners Sale</div>
+                    <div class="promo-item" onclick="filterCategory('men\'s clothing')"><strong>FASHION</strong><br>Mens Fashion</div>
+                    <div class="promo-item" onclick="showToast('Kids section coming!')"><strong>Kids&Baby</strong></div>
+                    <div class="promo-item" onclick="showToast('Call us: 0711 011 011')"><strong>Call To Order</strong></div>
+                    <div class="promo-item" onclick="showToast('Gaming section!')"><strong>Video Games</strong></div>
+                    <div class="promo-item" onclick="showToast('Fast delivery!')"><strong>JDelivery</strong></div>
+                </div>
             </div>
-            <div class="banner-img">
-                <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=400&h=250&fit=crop" alt="Soundbar">
-            </div>
-        </div>
-        
-        <div class="banner-slide" style="background: linear-gradient(90deg, #1a1d2e 0%, #3d4558 100%);">
-            <div class="banner-text">
-                <h2>FLASH DEALS</h2>
-                <h3>Samsung Galaxy S26 Ultra</h3>
-                <p class="price">KSh 161,300</p>
-                <button class="btn-shop" onclick="addToCart(406)">SHOP NOW</button>
-            </div>
-            <div class="banner-img">
-                <img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400&h=250&fit=crop" alt="Samsung Phone">
-            </div>
-        </div>
-        
-        <div class="banner-slide" style="background: linear-gradient(90deg, #2d3436 0%, #636e72 100%);">
-            <div class="banner-text">
-                <h2>COMPUTING DEALS</h2>
-                <h3>MacBook Pro 13' Core i5</h3>
-                <p class="price">KSh 22,500</p>
-                <button class="btn-shop" onclick="addToCart(102)">SHOP NOW</button>
-            </div>
-            <div class="banner-img">
-                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=250&fit=crop" alt="MacBook">
-            </div>
-        </div>
-        
-        <div class="banner-slide" style="background: linear-gradient(90deg, #0c2461 0%, #1e3799 100%);">
-            <div class="banner-text">
-                <h2>HOME APPLIANCES</h2>
-                <h3>QUBI CBT45 43 Inch Smart TV</h3>
-                <p class="price">KSh 17,810</p>
-                <button class="btn-shop" onclick="addToCart(201)">SHOP NOW</button>
-            </div>
-            <div class="banner-img">
-                <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=250&fit=crop" alt="Smart TV">
-            </div>
-        </div>
-    </div>
-    
-    <div class="slider-dots">
-        <span class="dot active" onclick="currentSlide(0)"></span>
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-    
-    <div class="banner-promo">
-        <div class="promo-item" onclick="showToast('Buy 2 Pay for 1 offer!')"><strong>BUY 2 PAY FOR 1</strong><br>Buy 2 Get Extra 2 Off</div>
-        <div class="promo-item" onclick="showToast('Extra 10% off on cleaners!')"><strong>XTRA 10% OFF</strong><br>Cleaners Sale</div>
-        <div class="promo-item" onclick="filterCategory('fashion')"><strong>FASHION</strong><br>Mens Fashion</div>
-        <div class="promo-item" onclick="filterCategory('kids')"><strong>Kids&Baby</strong></div>
-        <div class="promo-item" onclick="showToast('Call us: 0711 011 011')"><strong>Call To Order</strong></div>
-        <div class="promo-item" onclick="filterCategory('gaming')"><strong>Video Games</strong></div>
-        <div class="promo-item" onclick="showToast('Fast delivery available!')"><strong>JDelivery</strong></div>
-    </div>
-</div>
 
             <div class="whatsapp-sidebar">
                 <div class="wa-box" onclick="showToast('WhatsApp us: +254 711 011 011')">
@@ -135,6 +133,12 @@
         </div>
     </div>
 
+    <!-- Loading Spinner -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <p>Loading products...</p>
+    </div>
+
     <!-- Flash Sales -->
     <section class="flash-sales container">
         <div class="section-header">
@@ -150,17 +154,11 @@
     <!-- Category Circles -->
     <section class="category-circles container">
         <div class="circle-item" onclick="showToast('Flash Sales!')"><div class="circle-icon"><i class="fa-solid fa-bolt"></i></div><p>Flash Sales</p></div>
-        <div class="circle-item" onclick="filterCategory('home')"><div class="circle-icon"><i class="fa-solid fa-couch"></i></div><p>Home Deals</p></div>
-        <div class="circle-item" onclick="filterCategory('phones')"><div class="circle-icon"><i class="fa-solid fa-mobile-screen"></i></div><p>Phone Deals</p></div>
-        <div class="circle-item" onclick="filterCategory('tv')"><div class="circle-icon"><i class="fa-solid fa-tv"></i></div><p>Electronics</p></div>
-        <div class="circle-item" onclick="filterCategory('appliances')"><div class="circle-icon"><i class="fa-solid fa-blender"></i></div><p>Large Appliances</p></div>
-        <div class="circle-item" onclick="showToast('Official Stores!')"><div class="circle-icon"><i class="fa-brands fa-xiaomi"></i></div><p>Official Stores</p></div>
-        <div class="circle-item" onclick="filterCategory('computing')"><div class="circle-icon"><i class="fa-solid fa-laptop"></i></div><p>Computing</p></div>
-        <div class="circle-item" onclick="filterCategory('beauty')"><div class="circle-icon"><i class="fa-solid fa-pump-soap"></i></div><p>Beauty Deals</p></div>
+        <div class="circle-item" onclick="filterCategory('electronics')"><div class="circle-icon"><i class="fa-solid fa-plug"></i></div><p>Electronics</p></div>
+        <div class="circle-item" onclick="filterCategory('jewelery')"><div class="circle-icon"><i class="fa-solid fa-gem"></i></div><p>Jewelry</p></div>
+        <div class="circle-item" onclick="filterCategory('men\'s clothing')"><div class="circle-icon"><i class="fa-solid fa-shirt"></i></div><p>Men's Fashion</p></div>
+        <div class="circle-item" onclick="filterCategory('women\'s clothing')"><div class="circle-icon"><i class="fa-solid fa-person-dress"></i></div><p>Women's Fashion</p></div>
         <div class="circle-item express" onclick="showToast('Express Delivery!')"><div class="circle-icon"><i class="fa-solid fa-truck-fast"></i></div><p>EXPRESS DEALS</p></div>
-        <div class="circle-item" onclick="filterCategory('fashion')"><div class="circle-icon"><i class="fa-solid fa-shirt"></i></div><p>Fashion Deals</p></div>
-        <div class="circle-item" onclick="filterCategory('supermarket')"><div class="circle-icon"><i class="fa-solid fa-basket-shopping"></i></div><p>Supermarket</p></div>
-        <div class="circle-item" onclick="showToast('Make Money!')"><div class="circle-icon"><i class="fa-solid fa-money-bill-wave"></i></div><p>Make Money</p></div>
     </section>
 
     <!-- Top Selling Items -->
@@ -181,28 +179,6 @@
             <span class="see-all" onclick="showAllProducts()">See All ></span>
         </div>
         <div class="product-grid" id="easter-sale-grid">
-            <!-- Injected via JS -->
-        </div>
-    </section>
-
-    <!-- Buy Two Get 10% Off -->
-    <section class="product-section container">
-        <div class="section-header yellow-bg">
-            <h2>Buy Two | Get 10% Off</h2>
-            <span class="see-all" onclick="showAllProducts()">See All ></span>
-        </div>
-        <div class="product-grid" id="buy-two-grid">
-            <!-- Injected via JS -->
-        </div>
-    </section>
-
-    <!-- Easter Sale | Top Deals on Phones -->
-    <section class="product-section container">
-        <div class="section-header orange-bg">
-            <h2>Easter Sale | Top Deals on Phones</h2>
-            <span class="see-all" onclick="showAllProducts()">See All ></span>
-        </div>
-        <div class="product-grid" id="phones-grid">
             <!-- Injected via JS -->
         </div>
     </section>
@@ -322,8 +298,8 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-col">
-                    <h3>Jumia Kenya - Unveiling Our Leading E-Commerce Website</h3>
-                    <p>Welcome to the ultimate online shopping destination! Our e-commerce platform is here to revolutionize your shopping journey...</p>
+                    <h3>Jumia Kenya - Leading E-Commerce Website</h3>
+                    <p>Welcome to the ultimate online shopping destination! Powered by FakeStoreAPI for demo purposes.</p>
                 </div>
             </div>
             
@@ -333,26 +309,22 @@
                     <ul>
                         <li onclick="showToast('About Us')">About us</li>
                         <li onclick="showToast('Terms and Conditions')">Terms and Conditions</li>
-                        <li onclick="showToast('Jumia Careers')">Jumia Careers</li>
-                        <li onclick="showToast('Jumia Express')">Jumia Express</li>
+                        <li onclick="showToast('Privacy Policy')">Privacy Policy</li>
                     </ul>
                 </div>
                 <div class="col">
-                    <h4>MAKE MONEY WITH JUMIA</h4>
+                    <h4>CUSTOMER SERVICE</h4>
+                    <ul>
+                        <li onclick="showToast('Help Center')">Help Center</li>
+                        <li onclick="showToast('Track Order')">Track Order</li>
+                        <li onclick="showToast('Returns')">Returns</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>MAKE MONEY</h4>
                     <ul>
                         <li onclick="showToast('Sell on Jumia')">Sell on Jumia</li>
-                        <li onclick="showToast('Vendor Hub')">Vendor Hub</li>
-                        <li onclick="showToast('Become a Sales Consultant')">Become a Sales Consultant</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4>JUMIA INTERNATIONAL</h4>
-                    <ul>
-                        <li onclick="showToast('Ivory Coast')">Ivory Coast</li>
-                        <li onclick="showToast('Egypt')">Egypt</li>
-                        <li onclick="showToast('Ghana')">Ghana</li>
-                        <li onclick="showToast('Kenya')">Kenya</li>
-                        <li onclick="showToast('Nigeria')">Nigeria</li>
+                        <li onclick="showToast('Become Affiliate')">Become Affiliate</li>
                     </ul>
                 </div>
             </div>
@@ -362,7 +334,6 @@
                     <i class="fa-brands fa-facebook" onclick="showToast('Facebook')"></i>
                     <i class="fa-brands fa-instagram" onclick="showToast('Instagram')"></i>
                     <i class="fa-brands fa-twitter" onclick="showToast('Twitter')"></i>
-                    <i class="fa-brands fa-tiktok" onclick="showToast('TikTok')"></i>
                 </div>
                 <div class="payment-methods">
                     <span>VISA</span>
@@ -374,7 +345,9 @@
         </div>
     </footer>
 
-    <!-- External JS -->
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="api.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
