@@ -4,7 +4,7 @@
 window.CONFIG = {
     // Site Information
     site: {
-        name: "FlashCart-KE",
+        name: "FlashCart Kenyas",
         currency: "KSh",
         currencySymbol: "KSh",
         exchangeRate: 120,
